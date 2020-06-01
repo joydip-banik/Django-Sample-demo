@@ -1,0 +1,41 @@
+from django.db import models
+
+# Create your models here.
+class DevoteeInfo(models.Model):
+    temple_name = models.CharField(max_length=200)
+    department_name = models.CharField(max_length=200)
+    legal_name = models.CharField(max_length=200)
+    initiated_name = models.CharField(max_length=200)
+    initiated_place = models.CharField(max_length=500)
+    initiated_date = models.CharField(max_length=200)
+    counselor = models.CharField(max_length=200)
+    gotra = models.CharField(max_length=200)
+    occupation = models.CharField(max_length=200)
+    address = models.CharField(max_length=500)
+    qualification = models.CharField(max_length=200)
+    date_of_birth = models.CharField(max_length=200)
+    age = models.CharField(max_length=100)
+    skill = models.CharField(max_length=200)
+    wedding_anniversary = models.CharField(max_length=200)
+    mobile_number = models.CharField(max_length=200)
+    whats_app_number = models.CharField(max_length=200)
+    email_id = models.CharField(max_length=200)
+    family_other_name = models.CharField(max_length=200,)
+    relationship = models.CharField(max_length=200)
+    family_other_date = models.CharField(max_length=200)
+    specialday = models.CharField(max_length=200)
+    family_other_name1 = models.CharField(max_length=200)
+    relationship1 = models.CharField(max_length=200)
+    family_other_date1 = models.CharField(max_length=200)
+    specialday1 = models.CharField(max_length=200)
+    family_other_name2 = models.CharField(max_length=200)
+    relationship2 = models.CharField(max_length=200)
+    family_other_date2 = models.CharField(max_length=200)
+    specialday2 = models.CharField(max_length=200)
+    family_other_name3 = models.CharField(max_length=200)
+    relationship3 = models.CharField(max_length=200)
+    family_other_date3 = models.CharField(max_length=200)
+    specialday3 = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.legal_name
